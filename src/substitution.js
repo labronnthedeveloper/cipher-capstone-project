@@ -32,14 +32,14 @@ const substitutionModule = (function () {
 
       for (let i = 0; i < lowerInput.length; i++) {
         if (lowerInput[i] === " ") encodedResult += " "; // maintaining spaces
-        else encodedResult += alteredAlpha[normAlpha.indexOf(lowerInput[i])];
+        else encodedResult += alteredAlpha[normAlpha.indexOf(lowerInput[i])]; 
       }
       return encodedResult;
     };
     // Function that handles our decoding, by passing in our values and data/
     const _decode = (input, normAlpha, alteredAlpha) => {
       let decodedResult = "";
-      let lowerInput = input.toLowerCase();
+      let lowerInput = input.toLowerCase()
 
       for (let i = 0; i < lowerInput.length; i++) {
         if (lowerInput[i] === " ") decodedResult += " "; // maintaining spaces
