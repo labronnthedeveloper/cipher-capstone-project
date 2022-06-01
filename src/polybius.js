@@ -94,5 +94,4 @@ const polybiusModule = (function () {
     polybius,
   };
 })();
-console.log(polybiusModule.polybius("Thoughtful", true))
 module.exports = { polybius: polybiusModule.polybius };
